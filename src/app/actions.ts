@@ -7,10 +7,10 @@ export async function createUser(prevState: any, formData: FormData) {
   const jsonData = JSON.parse(data);
   fs.writeFileSync(
     "data.json",
-    JSON.stringify([{ ...jsonData, name: formData.get("name") }])
+    JSON.stringify([...jsonData, { name: formData.get("name") }])
   );
 
   return {
-    data: [{ ...jsonData, name: formData.get("name") }],
+    data: [...jsonData, { name: formData.get("name") }],
   };
 }
