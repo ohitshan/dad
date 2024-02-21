@@ -7,7 +7,7 @@ import { Button, Input } from "react-component-library-monkey";
 import data from "../../data.json";
 import { useEffect } from "react";
 const initialState = {
-  message: "",
+  data: [],
 };
 
 export default function Signup() {
