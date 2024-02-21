@@ -1,11 +1,11 @@
 "use server";
 
 import fs from "fs";
-import data from "/Users/han/Desktop/data.json";
+import data from "../../data.json";
 
 export async function createUser(prevState: any, formData: FormData) {
   fs.writeFileSync(
-    "/Users/han/Desktop/data.json",
+    "data.json",
     JSON.stringify([...data, { name: formData.get("name") }])
   );
 
