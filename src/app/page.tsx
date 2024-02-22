@@ -16,9 +16,9 @@ export default function Signup() {
   return (
     <>
       <div>
-        {state.data?.map((item, i) => (
+        {/* {state.data?.map((item, i) => (
           <div key={i}>{item.name}</div>
-        ))}
+        ))} */}
       </div>
       <form action={formAction}>
         <Controller
